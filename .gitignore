@@ -1,0 +1,31 @@
+cat > .gitignore <<'EOF'
+# macOS
+.DS_Store
+.AppleDouble
+._*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Dependencies
+node_modules/
+.cache/
+
+# Temporary files and backups
+*.log
+*.tmp
+*.bak
+*.zip
+backup/
+backups/
+EOF
