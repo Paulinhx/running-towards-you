@@ -105,5 +105,13 @@
         ><span><a href="index.html">HOME</a></span>
       </div>
     </footer>
+    <script>
+  document.getElementById("legal-email")?.addEventListener("click", () => {
+    const user = ["deliciab", "pro"].join(".");
+    const domain = ["gmail", "com"].join(".");
+
+    window.location.href = `mailto:${user}@${domain}`;
+  });
+</script>
   </body>
 </html>
