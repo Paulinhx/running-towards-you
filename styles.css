@@ -22,3 +22,31 @@
 
 /* V6: understated gallery subtitle and color-only link interactions */
 .gallery-heading p{font-size:clamp(13px,1.1vw,15px);line-height:1.65;letter-spacing:.025em;color:#64615f}.gallery-heading h2{letter-spacing:-.055em}.button,.underlink,.instagram,.gallery-open{transition:background-color .2s ease,color .2s ease,border-color .2s ease}.button:hover{transform:none}.button-light:hover{background:var(--violet);color:var(--ink)}.button-dark:hover{background:var(--violet-deep);color:#fff}.underlink:hover,.instagram:hover{color:var(--violet-deep)}.gallery-open:hover{background:var(--violet)}
+
+.contact-email-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.85rem 1.4rem;
+  margin-top: 0.75rem;
+
+  background: transparent;
+  color: #29252e;
+  border: 1px solid currentColor;
+  border-radius: 100px;
+
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.contact-email-btn:hover {
+  background: #29252e;
+  color: #fff;
+}
+
+.contact-email-btn:focus-visible {
+  outline: 2px solid #7757b8;
+  outline-offset: 4px;
+}
