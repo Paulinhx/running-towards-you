@@ -36,7 +36,7 @@
 
   font: inherit;
   font-size: 0.9rem;
-  cursor: pointer;
+  
 
   transition: background 0.25s ease, color 0.25s ease;
 }
