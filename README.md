@@ -1,67 +1,38 @@
-# RUNNING TOWARDS YOU
+# Running Towards You — V7 (readable edition)
 
-**Running. Mental health. Community. Storytelling.**
+Static HTML, CSS and vanilla JavaScript. No build step, npm install, or framework.
 
-*Nothing happened against you. All happened for you.*
+## What's changed
 
-Running Towards You is an independent storytelling platform exploring the relationship between running, mental health, and human connection.
+- Documentary poster replaced with the supplied Running Towards You / Refuge image, hosted locally at `assets/documentary-poster.webp`.
+- Mobile player now uses a 16:9 poster, smaller circular play button, and no overlay text rectangles. Video still loads only after a click.
+- Participating clubs section added immediately below the film, with **10 Instagram links** (SiFe intentionally omitted).
+- Gallery item **16** replaced with the supplied portrait `assets/rtyou11-4508.webp`.
+- `styles.css` reformatted for human readability and documented; `script.js` expanded into commented, editable sections.
+- Git metadata excluded so this package can be copied into an existing repository safely.
 
-Through documentary films, conversations, and community experiences, the project explores how movement can become a tool for healing, self-awareness, belonging, and personal transformation.
+## Important gallery note
 
-Rooted in Berlin and reaching beyond, Running Towards You celebrates the people, stories, and communities that remind us that running is about more than physical movement.
+The request did not identify which of the gallery's 20 photos was duplicated. Item **16** was selected as the replacement slot. If the duplicate is elsewhere, move the new image source and its caption to the correct gallery item in `index.html`.
 
-## THE PROJECT
+## How to update your existing VS Code project
 
-Running is a tool for health, a way to become more conscious, and a way to love yourself.
+1. Open your existing local Git repository and run `git status`.
+2. If clean, run `git pull --ff-only origin main` to obtain your latest GitHub edits.
+3. Unzip this package separately. Copy its site files (`index.html`, `styles.css`, `script.js`, `legal.html`, assets, etc.) into your existing repository. **Do not replace the `.git` folder.**
+4. Preview locally (VS Code Live Server or `python3 -m http.server 8000`).
+5. Review the changes with `git diff` and `git status`.
+6. Commit and push after testing: `git add . && git commit -m "Refine documentary, community and gallery" && git push origin main`.
 
-Running Towards You creates space for authentic stories about the emotional and collective dimensions of running. From discovering a city through movement to finding strength in community, each story offers a different perspective on what it means to move toward yourself.
+## Editing guide
 
-## EPISODE 01 — IT STARTED WITH A RUN
+- **Running clubs:** Find `running-community` in `index.html`.
+- **Poster image:** Find `documentary-poster.webp` in `index.html`.
+- **Video URL:** Find `youtube-nocookie.com` in `script.js`.
+- **Gallery:** Find `gallery-grid` in `index.html`.
+- **Colours:** Edit CSS variables at the start of `styles.css`.
+- **Mobile player:** Edit the `DOCUMENTARY PLAYER` section near the end of `styles.css`.
 
-It started with a run.
+## Production checks
 
-In February, during Black History Month, a community ran through Berlin to understand the city's place in colonialism.
-
-What began as an idea for a one-minute video became a 24-minute documentary about running, belonging, and the power of shared experiences.
-
-This first episode marks the beginning of Running Towards You.
-
-**[Watch the documentary on YouTube](https://youtu.be/q-qYZlgJaJI)**
-
-## COMMUNITY & CONVERSATIONS
-
-Running Towards You extends beyond documentary storytelling through gatherings, conversations, and cultural collaborations.
-
-Our first gathering and film presentation brought people together around movement, storytelling, and collective experience.
-
-The project has also been featured on Refuge Worldwide, Berlin's independent community radio platform.
-
-**[Listen on Refuge Worldwide / SoundCloud](https://soundcloud.com/refugeworldwide/running-towards-you-delicia-b)**
-
-## MEET DÉLICIA
-
-Running Towards You was created by **Délicia Buton**, a creator based between Berlin and Barcelona.
-
-The project began with a simple idea: running can be a way back to ourselves.
-
-Through film, storytelling, and community, Délicia explores how movement can heal, connect, and help us feel at home, wherever we are.
-
-**Read more:**
-
-- [Running Towards You — The Story](https://iamdeliciabuton.substack.com/p/running-towards-you)
-- [Community & Wellness](https://iamdeliciabuton.substack.com/p/community-and-wellness)
-- [Délicia's Substack](https://iamdeliciabuton.substack.com/)
-
-## CONNECT
-
-**[Instagram — @rty.doc](https://www.instagram.com/rty.doc/)**
-
-Follow the journey for upcoming films, gatherings, conversations, and community experiences.
-
----
-
-© 2026 Running Towards You
-
-An independent creative project by Délicia Buton.
-
-All rights reserved. Photographs, films, texts, and other creative materials remain the property of their respective rights holders. No reuse or redistribution without permission.
+Test phone and desktop layout, keyboard navigation, gallery lightbox, YouTube playback, SoundCloud playback, and all Instagram links. The legal page may require additional publisher details under applicable law. The email button is basic obfuscation, not robust anti-scraping protection. Security headers/CSP should be tested against all media embeds before deploying.

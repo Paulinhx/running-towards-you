@@ -26,6 +26,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   </head>
   <body>
+    <!-- Navigation, documentary, community, gallery and footer follow. -->
     <a class="skip" href="#main">Skip to content</a>
     <header class="header" id="top">
       <a class="brand" href="#top" aria-label="Running Towards You, home"
@@ -107,27 +108,53 @@
             begins in Berlin.
           </p>
         </div>
+        <!-- Documentary poster: the YouTube player loads only after a click. -->
         <div class="video-frame" id="videoFrame">
           <img
-  src="https://i.ytimg.com/vi/q-qYZlgJaJI/hqdefault.jpg"
-  alt="Running Towards You — documentary thumbnail"
-  loading="lazy"
->
+            src="assets/documentary-poster.webp"
+            alt="Running Towards You documentary poster, showing a running shoe and Refuge Worldwide credit"
+            loading="lazy"
+            width="1653"
+            height="928"
           />
-          <div class="video-tint"></div>
-          <span class="video-top">RUNNING TOWARDS YOU / EPISODE 01</span
-          ><button
+          <div class="video-tint" aria-hidden="true"></div>
+          <span class="video-top">RUNNING TOWARDS YOU / EPISODE 01</span>
+          <button
             class="play"
             id="videoButton"
             type="button"
-            aria-label="Play Running Towards You documentary on YouTube"
+            aria-label="Play Running Towards You documentary"
           >
-            ▶</button
-          ><span class="video-bottom">WATCH THE DOCUMENTARY</span>
+            <span aria-hidden="true">▶</span>
+          </button>
+          <span class="video-bottom">WATCH THE DOCUMENTARY</span>
         </div>
         <div class="film-meta">
           <span>DOCUMENTARY / BERLIN</span
           ><span>EPISODE 001 — THE BEGINNING</span>
+        </div>
+      </section>
+      <!-- Running clubs featured in Episode 01. Edit the Instagram links here. -->
+      <section class="running-community section-pad" aria-labelledby="community-title">
+        <div class="community-inner">
+          <p class="community-eyebrow">RUNNING TOWARDS YOU / COMMUNITY</p>
+          <h2 id="community-title">The community behind the movement.</h2>
+          <p class="community-intro">
+            A collective journey made possible by the running communities who
+            showed up, shared their energy, and became part of the story.
+          </p>
+          <div class="community-links">
+            <a href="https://www.instagram.com/thefreshpatternscollective/" target="_blank" rel="noopener noreferrer">@thefreshpatternscollective <span aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/run_n_rave/" target="_blank" rel="noopener noreferrer">@run_n_rave <span aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/coolrunningsclub/" target="_blank" rel="noopener noreferrer">@coolrunningsclub <span aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/berlinbraves/" target="_blank" rel="noopener noreferrer">@berlinbraves <span aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/dedicationnattitude/" target="_blank" rel="noopener noreferrer">@dedicationnattitude <span aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/joyruncollective/" target="_blank" rel="noopener noreferrer">@joyruncollective <span aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/melaninmoves.bln/" target="_blank" rel="noopener noreferrer">@melaninmoves.bln <span aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/outrunthepatriarchy/" target="_blank" rel="noopener noreferrer">@outrunthepatriarchy <span aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/blackwomenrunberlin/" target="_blank" rel="noopener noreferrer">@blackwomenrunberlin <span aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/stillwerunbln/" target="_blank" rel="noopener noreferrer">@stillwerunbln <span aria-hidden="true"></span></a>
+          </div>
         </div>
       </section>
       <section class="movement section-pad" id="movement">
@@ -495,17 +522,17 @@
             <button
               class="gallery-open"
               type="button"
-              data-full="assets/rtyouwblu23-4669.webp"
+              data-full="assets/rtyou11-4508.webp"
               aria-label="Enlarge photo 20: Community moments"
             >
               <img
-                src="assets/rtyouwblu23-4669.webp"
-                alt="Community moments"
+                src="assets/rtyou11-4508.webp"
+                alt="Portrait of a guest seated indoors at the gathering"
                 loading="lazy"
                 decoding="async"
               />
             </button>
-            <figcaption>16 / Community moments</figcaption>
+            <figcaption>16 / Portrait at the gathering</figcaption>
           </figure>
           <figure class="gallery-item">
             <button
