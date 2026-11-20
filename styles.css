@@ -50,3 +50,20 @@
   outline: 2px solid #7757b8;
   outline-offset: 4px;
 }
+
+@media (max-width: 768px) {
+  .video-frame .play {
+    display: none;
+  }
+
+  .video-frame .video-top,
+  .video-frame .video-bottom {
+    display: none;
+  }
+
+  .video-frame > img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
